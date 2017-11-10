@@ -1,5 +1,6 @@
 const gulp = require('gulp')
 const watch = require('gulp-watch')
+const gutil = require('gulp-util')
 const runSequence = require('run-sequence')
 const browserSync = require('browser-sync')
 const plumber = require('gulp-plumber')
@@ -8,9 +9,10 @@ const prettify = require('postcss-prettify')
 const cssNext = require('postcss-cssnext')
 const nested = require('postcss-nested')
 const flexfixes = require('postcss-flexbugs-fixes')
-const removeComments = require('postcss-discard-comments')
 const atImport = require('postcss-import')
 const sourcemaps = require('gulp-sourcemaps')
+const cleanCSS = require('gulp-clean-css')
+const rename = require('gulp-rename')
 const { reload } = browserSync
 
 const errorHandler = (error) => {
@@ -73,9 +75,9 @@ gulp.task('css', () => {
     .pipe(plumber({
       errorHandler
     }))
-    .pipe(sourcemaps.init()))
+    .pipe(sourcemaps.init())
     .pipe(postcss(plugins))
-    .pipe(sourcemaps.write('.')))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./css'))
 })
 
@@ -87,3 +89,12 @@ gulp.task('default', () => {
     'watch'
   );
 });
+
+gulp.task('minify:css', () => gulp
+  .src('./css/index.css')
+  .pipe(cleanCSS({ debug: false }))
+  .pipe(rename({
+    suffix: '.min'
+  }))
+  .pipe(gulp.dest('./css'))
+)
