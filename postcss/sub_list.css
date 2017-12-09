@@ -1,0 +1,66 @@
+.sub_list {
+	max-width: 1150px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin: 0 auto;
+}
+.sub_list-container {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+}
+.sub_list-image {
+	padding-top: 157px;
+	padding-bottom: 157px;
+	margin-left: -20px; 
+}
+.sub_list-contant_box {
+	padding-top: 157px;
+	padding-bottom: 157px;
+}
+.sub_list-contant_box p {
+	color: var(--grey_txt);
+	padding-bottom: 40px;
+}
+.sub_list-contant_box h6 {
+	font-size: 14px;
+	color: var(--black);
+	padding-left: 60px;
+}
+.sub_list--title  {
+	font-weight: 600;
+	font-size: 20px;
+	padding-bottom: 25px;
+	color: var(--black);
+
+}
+.sub_list--line {
+	width: 68px;
+	height: 10px;
+	border-top: 2px solid #ff8b38;
+	padding-bottom: 25px;
+
+}
+.circle--fa-cloud {
+	width: 40px;
+	height: 38px;
+	background: rgba(255, 255, 255, .9);
+	-moz-border-radius: 18px; /*для правильного отображения в гугле и сафари*/
+	-webkit-border-radius: 18px; /*для правильного отображения в фоксе*/
+	border-radius: 50%;
+	border: 2px solid var(--orange);
+	text-align: center;
+	float: left;
+	padding-top: 5px;
+}
+.sub_list-fa_cloud-description {
+	padding-left: 60px;
+}
+.fa-cloud-upload {
+	color: var(--orange);
+}
+.fa-cloud-download {
+	color: var(--orange);
+}
+

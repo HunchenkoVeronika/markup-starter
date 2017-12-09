@@ -1,0 +1,59 @@
+.welcome--form-block {
+	padding-top: 100px;
+	padding-bottom: 40px;
+	font-size: 0;
+}
+.welcome--form {
+	width: 362px;
+	height: 362px;
+	border-radius: 3px;
+}
+.welcome--fieldset {
+	border: 0;
+}
+.welcome-gray_box {
+	background-color: var(--grey);
+	height: 54px;
+	text-align: center;
+	line-height: 2.5;
+	border-radius: 3px 3px 0 0;
+}
+.welcome-gray_box p {
+	font-size: 20px;
+	font-weight: 600;
+}
+.welcome-gray_box--title {
+	color: var(--orange);
+	text-transform: uppercase;
+}
+.welcome-placeholder_box {
+	width: 362px;
+	height: 86px;
+	background-color: var(--white);
+	padding-left: 40px;
+	line-height: 2.5;
+	padding-top: 10px;
+}
+.welcome-input {
+	border: 0;
+	padding: 0;
+	background-color: var(--white);
+	color: var(--grey_txt);
+	border-bottom: 1px solid var(--grey_txt);
+	width: 285px;
+	font-weight: 300;
+	font-size: 15px;
+}
+.welcome-button {
+	width: 362px;
+	height: 61px;
+	border: 0;
+	border-radius: 0 0 3px 3px;
+	background-color: var(--orange);
+}
+.welcome-button-text {
+	color: var(--white);
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: capitalize;
+}

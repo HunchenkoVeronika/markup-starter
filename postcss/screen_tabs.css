@@ -1,0 +1,44 @@
+@media screen and (max-width: 539px) {
+	.tabs-holder {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.tabs-nav-block {
+		padding-top: 70px;
+		padding-bottom: 55px;
+		display: flex;
+		margin: auto;
+		max-width: 100%
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.tabs-nav-item {
+		height: 70px;
+		width: 70px;
+	}
+	.tabs-nav-txt {
+		font-size: 15px;
+		line-height: 5;
+	}
+	.tabs-content-title {
+		font-size: 15px;
+		padding-bottom: 25px;
+	}
+	.tabs-text-block {
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+	}
+	.tabs-text-block p {
+		font-size: 12px;
+		padding-right: 10px;
+	}
+	.tabs-action-button {
+		margin: auto;
+	}
+	.tabs-content-img {
+		padding-top: 20px;
+	}
+}

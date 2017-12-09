@@ -1,0 +1,26 @@
+.logo {
+	font-size: 2rem;
+	text-decoration: none;
+	color: var(--white);
+	text-transform: uppercase;
+	font-weight: 800;
+	transition:  color .2s ease-in-out;
+}
+.logo_emphasis {
+	color: var(--orange);
+	font-weight: 300;
+}
+.logo--lg {
+	font-size: 4rem;
+}
+@media screen and (min-width: 540px) and (max-width: 768px) {
+	.logo {
+		margin: auto;
+	}
+
+}
+@media screen and (max-width: 539px) {
+	.logo {
+		margin: auto;
+	}
+}

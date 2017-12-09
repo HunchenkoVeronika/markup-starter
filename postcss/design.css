@@ -1,0 +1,29 @@
+.design {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	min-height: 45vh;
+	position: relative;
+}
+.design-container {
+	max-width: 1150px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 64px;
+	color: var(--white);
+}
+.design--line {
+	margin: auto;
+	width: 68px;
+	height: 10px;
+	border-top: 2px solid #fff;
+	padding-bottom: 25px;
+}
+.design-subtitle {
+	font-weight: 300;
+	font-size: 16px;
+	color: var(--grey_txt);
+	padding-bottom: 34px;
+}

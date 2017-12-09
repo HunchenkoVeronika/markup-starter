@@ -1,0 +1,51 @@
+.footer {
+	background-color: var(--black);
+}
+.footer_container { 
+	max-width: 1150px;
+	margin: 0 auto;
+	color: var(--grey_txt);
+	text-align: center;
+	padding-top: 21px;
+	padding-bottom: 15px;
+}
+.footer_container {
+	font-size: 12px;
+}
+.footer-nav li {
+	display: inline-block;
+	list-style: none;
+}
+.footer-nav a {
+	display: inline-block;
+  	width: 28px;
+  	height: 28px;
+  	text-indent: 100%;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	margin: 1px;
+ 	background: url('../images/sprites_mini.png');
+  	background-repeat: no-repeat;
+
+} 
+.footer-nav .fb {
+	background-position: 14px 2px;
+}
+.footer-nav .tw {
+	background-position: -37px 2px;
+}
+.footer-nav .gg {
+	background-position: -92px 3px;
+}
+.footer-nav .pt {
+	background-position: -138px 2px;
+}
+.footer-nav .inst {
+	background-position: -188px 2px;
+}
+.footer-nav .lin {
+	background-position: -241px 2px;
+}
+.footer-nav .rss {
+	background-position: -292px 2px;
+}

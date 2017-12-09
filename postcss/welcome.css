@@ -1,0 +1,135 @@
+.welcome {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	min-height: calc(100vh - 75px);
+	position: relative;
+}
+/*.welcome::before {
+	content:'';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	background-color: var(--black);
+	opacity: 0.1;
+	z-index: 1;
+	background-repeat: no-repeat;
+}
+*/
+.welcome-container {
+	max-width: 1150px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin: 0 auto;
+}
+.welcome-container--content {
+	display: flex;
+	justify-content: space-between;
+}
+.welcome--content-holder {
+	padding-top: 80px;
+	width: 50%;
+}
+.welcome-title {
+	color: var(--white);
+	text-transform: uppercase;
+	font-size: 36px;
+	padding-top: 28px;
+	font-family: "Raleway";
+}
+.welcome-line {
+	height: 10px;
+	width: 70px;
+	border-bottom: 2px solid #fff;
+	padding-top: 32px;
+}
+.welcome-description {
+	padding-top: 22px;
+	padding-bottom: 32px;
+	color: var(--white);
+	font-size: 16px;
+	font-weight: 300;
+	font-family: "Raleway";
+	line-height: 1.5;
+}
+.welcome-action-button {
+	width: 140px;
+	height: 40px;
+	border: 2px solid var(--white);
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	color: var(--white);
+	font-weight: 600;
+	display: inline-block;
+	vertical-align: middle;
+}
+.welcome-action-button-befor {
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+@media screen and (min-width: 540px) and (max-width: 768px) {
+	.welcome-container--content {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.welcome--content-holder {
+		padding-top: 40px;
+		text-align: center;
+		width: 100%;
+	}
+	.welcome-title {
+		font-size: 19px;
+		padding-top: 14px;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 539px) {
+	.welcome-container--content {
+		display: flex;
+		flex-direction: column;
+	}
+	.welcome--content-holder {
+		padding-top: 40px;
+		text-align: center;
+		width: 100%;
+	}
+	.welcome-title {
+		font-size: 19px;
+		padding-top: 14px;
+		text-align: center;
+	}
+	.welcome-line {
+		margin: auto;
+	}
+	.welcome--form-block {
+		width: 100%;
+		font-size: 0;
+
+	}
+	.welcome--form {
+		width: 330px;
+		margin: auto;
+
+	}
+	.welcome-placeholder_box {
+		width: 330px;
+		padding-left: 20px;
+		font-size: 15px;
+
+	}
+	.welcome-button {
+		width: 330px;
+	}
+	.welcome-input {
+		font-size: 15px;
+		line-height: 2.5;
+		padding-top: 15px;
+	}
+}

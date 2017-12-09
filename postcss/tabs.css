@@ -1,0 +1,123 @@
+.tabs-container {
+	background-color: var(--grey);
+}
+.tabs-holder {
+	max-width: 1150px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.tabs-nav-block {
+	padding-top: 143px;
+	padding-bottom: 116px;
+}
+.tabs-nav-item {
+	height: 110px;
+	width: 110px;
+	background-color: var(--black_txt);
+	border: 1px solid var(--grey_txt);
+	text-align: center;
+	cursor: pointer;
+}
+.tabs-nav-item:hover {
+	background-color: var(--orange);
+	border: 1px solid var(--grey);
+}
+.tabs-nav-item:first-child {
+	border-radius: 3px 3px 0 0;
+}
+.tabs-nav-item:last-child {
+	border-radius: 0 0 3px 3px;
+}
+.tabs-nav-txt {
+	text-transform: uppercase;
+ 	color: var(--white);
+ 	font-size: 15px;
+ 	font-weight: 600;
+ 	line-height: 7;
+}
+.tabs-nav-item.active {
+	background-color: var(--orange);
+}
+.tabs-content-title {
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 50px;
+	display: none;
+}
+.tabs-text-block p {
+	font-size: 14px;
+	padding-bottom: 22px;
+	color: var(--grey_txt);
+}
+.tabs-action-button {
+	width: 140px;
+	height: 40px;
+	border: 2px solid var(--orange);
+	background-color: var(--orange);
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 0 rgba(199, 199, 199, .5);
+	text-decoration: none;
+	font-size: 15px;
+	color: var(--white);
+	font-weight: 600;
+	display: inline-block;
+	vertical-align: middle;
+}
+.tabs-action-button-befor {
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.tabs-content-title.active {
+	display: block;
+}
+@media screen and (max-width: 539px) {
+  	.tabs-holder {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.tabs-nav-block {
+		padding-top: 70px;
+		padding-bottom: 55px;
+		display: flex;
+		margin: auto;
+		max-width: 100%
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.tabs-nav-item {
+		height: 70px;
+		width: 70px;
+	}
+	.tabs-nav-txt {
+		font-size: 15px;
+		line-height: 5;
+	}
+	.tabs-content-title {
+		font-size: 15px;
+		padding-bottom: 25px;
+	}
+	.tabs-text-block {
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+	}
+	.tabs-text-block p {
+		font-size: 12px;
+		padding-right: 10px;
+	}
+	.tabs-action-button {
+		margin: auto;
+	}
+	.tabs-content-img {
+		padding-top: 20px;
+	}
+}

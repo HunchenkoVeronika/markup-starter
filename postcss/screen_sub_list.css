@@ -1,0 +1,30 @@
+@media screen and (max-width: 539px) {
+	.sub_list-container {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 539px) {
+	.standard-container {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 539px) {
+	.advantages {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 539px) {
+	.pricing-item_holder {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 539px) {
+	.customers-holder {
+		display: flex;
+		flex-direction: column;
+	}
+}
